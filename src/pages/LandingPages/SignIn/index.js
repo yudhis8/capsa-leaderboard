@@ -56,13 +56,16 @@ function SignInBasic() {
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://103.175.217.173:8080/api/v1/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const response = await fetch(
+        "https://leaderboard.beras-nusantara.com/api/v1/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
       const data = await response.json();
       if (response.ok) {
         // Handle successful login

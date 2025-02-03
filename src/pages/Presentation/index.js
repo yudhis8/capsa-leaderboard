@@ -55,7 +55,7 @@ function Presentation() {
 
       try {
         const response = await fetch(
-          "http://103.175.217.173:8080/api/v1/users",
+          "https://leaderboard.beras-nusantara.com/api/v1/users",
           {
             method: "GET",
             headers: {
@@ -94,7 +94,7 @@ function Presentation() {
 
     try {
       const response = await fetch(
-        "http://103.175.217.173:8080/api/v1/leaderboard",
+        "https://leaderboard.beras-nusantara.com/api/v1/leaderboard",
         {
           method: "GET",
           headers: {
@@ -150,7 +150,7 @@ function Presentation() {
 
     try {
       const response = await fetch(
-        "http://103.175.217.173:8080/api/v1/points",
+        "https://leaderboard.beras-nusantara.com/api/v1/points",
         {
           method: "POST",
           headers: {
@@ -194,6 +194,7 @@ function Presentation() {
             item
             xs={12}
             lg={12}
+            mb={10}
             justifyContent='center'
             mx='auto'
           >
@@ -205,7 +206,7 @@ function Presentation() {
                 container
                 item
                 xs={12}
-                lg={6}
+                lg={4}
                 justifyContent='center'
                 mx='auto'
               >
@@ -234,26 +235,28 @@ function Presentation() {
         }}
       >
         <MKBox pt={5} pb={6}>
-          {manipulatedData?.map((item, index) => (
-            <Grid
-              onClick={() => handleItemClickManipulate(item, index)}
-              pt={5}
-              container
-              item
-              xs={12}
-              lg={7}
-              justifyContent='center'
-              mx='auto'
-            >
-              <HorizontalTeamCard
-                image='https://picsum.photos/200'
-                position={{ color: "info", label: "Player" }}
-                description='Capsa Gamer Competition'
-                key={item.id}
-                name={item.name}
-              />
-            </Grid>
-          ))}
+          <Grid flexDirection='row' lg={12} container>
+            {manipulatedData?.map((item, index) => (
+              <Grid
+                onClick={() => handleItemClickManipulate(item, index)}
+                pt={5}
+                container
+                item
+                xs={12}
+                lg={4}
+                justifyContent='center'
+                mx='auto'
+              >
+                <HorizontalTeamCard
+                  image='https://picsum.photos/200'
+                  position={{ color: "info", label: "Player" }}
+                  description='Capsa Gamer Competition'
+                  key={item.id}
+                  name={item.name}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </MKBox>
         {manipulatedData.length > 0 && (
           <MKBox mt={4} mb={1}>
@@ -268,26 +271,29 @@ function Presentation() {
           </MKBox>
         )}
         <MKBox pt={5} pb={6}>
-          {data?.map((item, index) => (
-            <Grid
-              onClick={() => handleItemClick(item, index)}
-              pt={5}
-              container
-              item
-              xs={12}
-              lg={7}
-              justifyContent='center'
-              mx='auto'
-            >
-              <HorizontalTeamCard
-                image='https://picsum.photos/200'
-                position={{ color: "info", label: "Player" }}
-                description='Capsa Gamer Competition'
-                key={item.id}
-                name={item.name}
-              />
-            </Grid>
-          ))}
+          <Grid flexDirection='row' lg={12} container>
+            {data?.map((item, index) => (
+              <Grid
+                onClick={() => handleItemClick(item, index)}
+                pt={5}
+                container
+                item
+                xs={12}
+                lg={4}
+                justifyContent='center'
+                fle
+                mx='auto'
+              >
+                <HorizontalTeamCard
+                  image='https://picsum.photos/200'
+                  position={{ color: "info", label: "Player" }}
+                  description='Capsa Gamer Competition'
+                  key={item.id}
+                  name={item.name}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </MKBox>
       </Card>
     </>

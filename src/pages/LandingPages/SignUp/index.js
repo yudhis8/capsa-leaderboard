@@ -55,7 +55,7 @@ function SignUpBasic() {
     event.preventDefault();
     try {
       const response = await fetch(
-        "http://103.175.217.173:8080/api/v1/register",
+        "https://leaderboard.beras-nusantara.com/api/v1/register",
         {
           method: "POST",
           headers: {
