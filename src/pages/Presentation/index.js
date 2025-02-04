@@ -55,7 +55,7 @@ function Presentation() {
 
       try {
         const response = await fetch(
-          "https://leaderboard.beras-nusantara.com/api/v1/users",
+          "https://leaderboard.ronaldotantra.my.id/api/v1/users",
           {
             method: "GET",
             headers: {
@@ -94,7 +94,7 @@ function Presentation() {
 
     try {
       const response = await fetch(
-        "https://leaderboard.beras-nusantara.com/api/v1/leaderboard",
+        "https://leaderboard.ronaldotantra.my.id/api/v1/leaderboard",
         {
           method: "GET",
           headers: {
@@ -150,7 +150,7 @@ function Presentation() {
 
     try {
       const response = await fetch(
-        "https://leaderboard.beras-nusantara.com/api/v1/points",
+        "https://leaderboard.ronaldotantra.my.id/api/v1/points",
         {
           method: "POST",
           headers: {
@@ -205,9 +205,9 @@ function Presentation() {
                 pt={5}
                 container
                 item
-                xs={12}
+                xs={5}
                 lg={4}
-                justifyContent='center'
+                justifyContent='space-around'
                 mx='auto'
               >
                 <HorizontalTeamCard
@@ -242,7 +242,7 @@ function Presentation() {
                 pt={5}
                 container
                 item
-                xs={12}
+                xs={5}
                 lg={4}
                 justifyContent='center'
                 mx='auto'
@@ -278,7 +278,7 @@ function Presentation() {
                 pt={5}
                 container
                 item
-                xs={12}
+                xs={5}
                 lg={4}
                 justifyContent='center'
                 fle

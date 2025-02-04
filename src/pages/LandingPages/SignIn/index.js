@@ -57,7 +57,7 @@ function SignInBasic() {
     event.preventDefault();
     try {
       const response = await fetch(
-        "https://leaderboard.beras-nusantara.com/api/v1/login",
+        "https://leaderboard.ronaldotantra.my.id/api/v1/login",
         {
           method: "POST",
           headers: {
