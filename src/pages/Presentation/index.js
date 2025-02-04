@@ -211,6 +211,7 @@ function Presentation() {
                 mx='auto'
               >
                 <HorizontalTeamCard
+                  showImage
                   image='https://picsum.photos/200'
                   position={{ color: "info", label: "Rank " + (index + 1) }}
                   description={`Total Points: ${item.TotalPoint}`}
