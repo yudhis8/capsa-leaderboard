@@ -288,7 +288,6 @@ function Presentation() {
                 <HorizontalTeamCard
                   image='https://picsum.photos/200'
                   position={{ color: "info", label: "Player" }}
-                  description='Capsa Gamer Competition'
                   key={item.id}
                   name={item.name}
                 />
