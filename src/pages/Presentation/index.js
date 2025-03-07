@@ -55,7 +55,7 @@ function Presentation() {
 
       try {
         const response = await fetch(
-          "https://leaderboard.ronaldotantra.my.id/api/v1/users",
+          "https://leaderboard.beras-nusantara.com/api/v1/users",
           {
             method: "GET",
             headers: {
@@ -94,7 +94,7 @@ function Presentation() {
 
     try {
       const response = await fetch(
-        "https://leaderboard.ronaldotantra.my.id/api/v1/leaderboard",
+        "https://leaderboard.beras-nusantara.com/api/v1/leaderboard",
         {
           method: "GET",
           headers: {
@@ -150,7 +150,7 @@ function Presentation() {
 
     try {
       const response = await fetch(
-        "https://leaderboard.ronaldotantra.my.id/api/v1/points",
+        "https://leaderboard.beras-nusantara.com/api/v1/points",
         {
           method: "POST",
           headers: {
