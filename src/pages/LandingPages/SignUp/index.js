@@ -55,7 +55,7 @@ function SignUpBasic() {
     event.preventDefault();
     try {
       const response = await fetch(
-        "https://leaderboard.beras-nusantara.com/api/v1/register",
+        "https://capsa.sinergisukses.com/api/v1/register",
         {
           method: "POST",
           headers: {
